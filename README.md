@@ -6,3 +6,7 @@ toolchains through target prefixed commands for `gcc clang ld ld.gold nm ar ranl
 
 The driver is the `wrapper` script. `bootstrap` generates the `<target>-<command>` symlinks to the
 driver. While the `.config` files hold the relevant abstractions.
+
+## Installation
+
+To use `wrapper`, you must run `bootstrap` first.
