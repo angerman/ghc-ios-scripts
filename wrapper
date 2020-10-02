@@ -114,6 +114,14 @@ case $name in
 		flags="--sdk iphonesimulator ${cmd}"
 		cmd="xcrun"
 		;;
+	aarch64-apple-darwin-clang|aarch64-apple-darwin-ld|arm64-apple-darwin-clang|arm64-apple-darwin-ld)
+		flags="--sdk macosx ${cmd} -arch arm64"
+		cmd="xcrun"
+		;;
+        aarch64-apple-darwin-*|arm64-apple-darwin-*)
+		flags="--sdk macosx ${cmd}"
+		cmd="xcrun"
+		;;
 	# default
 	*-llvm-*|wasm32-*-nm|wasm32-*-ar|wasm32-*-ranlib)
 	    # if there is -llvm- in the name, we need to retain it

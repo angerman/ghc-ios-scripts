@@ -1,6 +1,6 @@
 #!/bin/bash
 
-targets="arm-linux-gnueabihf x86_64-linux-android armv7-linux-androideabi aarch64-linux-android x86_64-apple-ios aarch64-apple-ios wasm32-unknown-unknown-wasm"
+targets="arm-linux-gnueabihf x86_64-linux-android armv7-linux-androideabi aarch64-linux-android x86_64-apple-ios aarch64-apple-ios wasm32-unknown-unknown-wasm aarch64-apple-darwin arm64-apple-darwin"
 commands="clang ld ld.gold nm ar ranlib cabal llvm-dis llvm-nm llvm-ar"
 
 for target in $targets; do
